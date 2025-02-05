@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Online Banking System</h1>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Banking Operations</h2>
+      <div id="account-operations">
+        <button onclick="createAccount()">Create Account</button>
+        <button onclick="deleteAccount()">Delete Account</button>
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+        <button onclick="checkBalance()">Check Balance</button>
+        <button onclick="viewTransactionHistory()">Transaction History</button>
+        <button onclick="viewAllAccounts()">View All Accounts</button>
+        <button onclick="exitService()">Exit</button>
+      </div>
+    </div>
+    <div id="account-details" style="display: none;">
+      <h3>All Account Details</h3>
+      <ul id="accounts"></ul>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Banking System</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
